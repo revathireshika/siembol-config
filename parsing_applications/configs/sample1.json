@@ -1,6 +1,6 @@
 {
   "parsing_app_name": "sample1",
-  "parsing_app_version": 2,
+  "parsing_app_version": 3,
   "parsing_app_author": "siembol",
   "parsing_app_description": "Windows event logs sample",
   "parsing_app_settings": {
@@ -19,7 +19,7 @@
   },
   "parsing_settings": {
     "single_parser": {
-      "output_topic": "siembol_win_eventlogs.txt",
+      "output_topic": "siembol.indexing",
       "parser_name": "parser1"
     }
   }
