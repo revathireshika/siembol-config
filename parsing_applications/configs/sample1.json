@@ -1,14 +1,14 @@
 {
   "parsing_app_name": "sample1",
-  "parsing_app_version": 1,
+  "parsing_app_version": 2,
   "parsing_app_author": "siembol",
   "parsing_app_description": "Windows event logs sample",
   "parsing_app_settings": {
     "parsing_app_type": "single_parser",
     "input_topics": [
-      "windows_event_logs.txt "
+      "win.evenlogs "
     ],
-    "error_topic": "siembol_win_eventlogs.txt",
+    "error_topic": "siembol.indexing",
     "num_workers": 1,
     "input_parallelism": 1,
     "parsing_parallelism": 1,
