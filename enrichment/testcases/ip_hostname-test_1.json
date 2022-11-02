@@ -52,7 +52,7 @@
     },
     "testing_table_name": "hostname",
     "testing_table_mapping": {
-      "1.2.3.5": {
+      "1.2.3.4": {
         "hostname": "test-name"
       }
     }
@@ -67,7 +67,7 @@
     }
   ],
   "author": "siembol",
-  "version": 6,
+  "version": 7,
   "test_case_name": "test_1",
   "config_name": "ip_hostname"
 }
