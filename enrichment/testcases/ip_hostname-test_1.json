@@ -70,7 +70,7 @@
     }
   ],
   "author": "siembol",
-  "version": 9,
+  "version": 10,
   "test_case_name": "test_1",
   "config_name": "ip_hostname"
 }
