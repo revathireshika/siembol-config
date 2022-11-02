@@ -42,7 +42,7 @@
       "syslog_hostname": "NXLOG-AGENT",
       "FailureReason": "%%2313",
       "EventID": "4625",
-      "IpAddress": "1.2.3.4",
+      "IpAddress": "1.2.3.5",
       "TargetUserName": "ADMINISTRATOR",
       "RecordNumber": "133819",
       "SubjectUserSid": "S-1-0-0",
@@ -67,7 +67,7 @@
     }
   ],
   "author": "siembol",
-  "version": 5,
+  "version": 6,
   "test_case_name": "test_1",
   "config_name": "ip_hostname"
 }
