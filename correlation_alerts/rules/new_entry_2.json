@@ -1,0 +1,17 @@
+{
+  "rule_name": "new_entry_2",
+  "rule_author": "siembol",
+  "rule_version": 1,
+  "correlation_attributes": {
+    "time_unit": "minutes",
+    "time_window": 5,
+    "time_computation_type": "processing_time",
+    "alerts": [
+      {
+        "alert": "linux_sudo_usage",
+        "threshold": 4,
+        "mandatory": false
+      }
+    ]
+  }
+}
