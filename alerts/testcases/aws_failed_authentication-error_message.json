@@ -1,9 +1,8 @@
 {
-  "test_case_name": "error_message",
   "description": "Failed authentication error message",
   "test_specification": {
     "event": {
-      "userIdentity_principalId": "AIDACKCEVSQ6C2EXAMPLE",
+      "userIdentity_principalId": "d",
       "eventID": "d38ce1b3-4575-4cb8-a632-611b8243bfc3",
       "awsRegion": "us-east-1",
       "responseElements_ConsoleLogin": "Failure",
@@ -46,6 +45,7 @@
     }
   ],
   "author": "siembol",
-  "version": 1,
+  "version": 2,
+  "test_case_name": "error_message",
   "config_name": "aws_failed_authentication"
 }
