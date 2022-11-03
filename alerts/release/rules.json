@@ -9,7 +9,7 @@
     "max_per_hour": 30,
     "max_per_day": 100
   },
-  "rules_version": 5,
+  "rules_version": 6,
   "rules": [
     {
       "rule_name": "win_mimikatz",
@@ -60,6 +60,36 @@
       "rule_protection": {
         "max_per_hour": 100,
         "max_per_day": 3000
+      }
+    },
+    {
+      "rule_name": "Suspicious_Activity_in_Shell_Commands",
+      "rule_author": "siembol",
+      "rule_version": 1,
+      "rule_description": "Detects suspicious shell commands used in various exploit codes ",
+      "source_type": "linux-syslog",
+      "matchers": [
+        {
+          "is_enabled": true,
+          "matcher_type": "REGEX_MATCH",
+          "is_negated": false,
+          "field": "original_string",
+          "data": "\\Q*cd /tmp || cd /var/run || cd /mnt*\\E"
+        }
+      ],
+      "tags": [
+        {
+          "tag_name": "sigma_id",
+          "tag_value": "2aa1440c-9ae9-4d92-84a7-a9e5f5e31695"
+        },
+        {
+          "tag_name": "sigma_tags",
+          "tag_value": "[attack.execution, attack.susp.cmds]"
+        }
+      ],
+      "rule_protection": {
+        "max_per_hour": 30,
+        "max_per_day": 100
       }
     }
   ]
