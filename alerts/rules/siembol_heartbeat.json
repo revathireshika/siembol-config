@@ -1,7 +1,7 @@
 {
   "rule_name": "siembol_heartbeat",
   "rule_author": "siembol",
-  "rule_version": 2,
+  "rule_version": 3,
   "source_type": "siembol_heartbeat",
   "matchers": [
     {
@@ -9,7 +9,7 @@
       "matcher_type": "REGEX_MATCH",
       "is_negated": false,
       "field": "siembol_heartbeat",
-      "data": "true"
+      "data": "false"
     }
   ],
   "rule_protection": {
