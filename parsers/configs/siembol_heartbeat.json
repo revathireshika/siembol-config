@@ -1,6 +1,6 @@
 {
   "parser_name": "siembol_heartbeat",
-  "parser_version": 2,
+  "parser_version": 3,
   "parser_author": "siembol",
   "parser_description": "Parser for siembol heartbeat",
   "parser_attributes": {
@@ -8,7 +8,7 @@
   },
   "parser_extractors": [
     {
-      "is_enabled": true,
+      "is_enabled": false,
       "name": "json",
       "field": "original_string",
       "post_processing_functions": [
