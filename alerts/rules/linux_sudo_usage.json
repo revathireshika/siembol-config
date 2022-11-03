@@ -1,7 +1,7 @@
 {
   "rule_name": "linux_sudo_usage",
   "rule_author": "siembol",
-  "rule_version": 2,
+  "rule_version": 3,
   "rule_description": "Using sudo command",
   "source_type": "linux-syslog",
   "matchers": [
@@ -11,7 +11,7 @@
       "is_negated": false,
       "field": "MESSAGE",
       "case_insensitive": false,
-      "starts_with": false,
+      "starts_with": true,
       "ends_with": false,
       "data": "sudo:"
     }
