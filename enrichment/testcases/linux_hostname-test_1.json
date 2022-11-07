@@ -1,5 +1,4 @@
 {
-  "test_case_name": "test_1",
   "test_specification": {
     "event": [
       {
@@ -18,9 +17,7 @@
     ],
     "testing_table_name": "linux_host",
     "testing_table_mapping": {
-      "mymachine.example.com": {
-        "syslog_hostname": "test-name"
-      }
+      "syslog_hostname": "test-name"
     }
   },
   "assertions": [
@@ -33,6 +30,7 @@
     }
   ],
   "author": "siembol",
-  "version": 1,
+  "version": 2,
+  "test_case_name": "test_1",
   "config_name": "linux_hostname"
 }
