@@ -1,6 +1,6 @@
 {
   "parser_name": "linux-syslog",
-  "parser_version": 1,
+  "parser_version": 2,
   "parser_author": "siembol",
   "parser_description": "Parser for syslog with sudo message tag",
   "parser_attributes": {
