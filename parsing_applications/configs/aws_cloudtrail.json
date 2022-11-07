@@ -1,6 +1,6 @@
 {
   "parsing_app_name": "aws_cloudtrail",
-  "parsing_app_version": 2,
+  "parsing_app_version": 3,
   "parsing_app_author": "siembol",
   "parsing_app_description": "AWS cloudtrail parsing application",
   "parsing_app_settings": {
@@ -13,7 +13,10 @@
     "input_parallelism": 1,
     "parsing_parallelism": 1,
     "output_parallelism": 1,
-    "parse_metadata": false
+    "parse_metadata": false,
+    "max_num_fields": 300,
+    "max_field_size": 40000,
+    "original_string_topic": "aws.cloudtrail"
   },
   "parsing_settings": {
     "single_parser": {
