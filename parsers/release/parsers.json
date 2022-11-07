@@ -1,5 +1,5 @@
 {
-  "parsers_version": 7,
+  "parsers_version": 8,
   "parsers_configurations": [
     {
       "parser_name": "aws_cloudtrail",
@@ -122,6 +122,20 @@
       "parser_author": "siembol",
       "parser_attributes": {
         "parser_type": "generic"
+      }
+    },
+    {
+      "parser_name": "linux-syslog",
+      "parser_version": 2,
+      "parser_author": "siembol",
+      "parser_description": "Parser for syslog with sudo message tag",
+      "parser_attributes": {
+        "parser_type": "syslog",
+        "syslog_config": {
+          "syslog_version": "RFC_5424",
+          "merge_sd_elements": false,
+          "timezone": "UTC"
+        }
       }
     }
   ]
