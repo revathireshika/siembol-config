@@ -1,0 +1,38 @@
+{
+  "test_case_name": "test_1",
+  "test_specification": {
+    "event": [
+      {
+        "original_string": "<34>1 2003-10-11T22:14:15.003Z mymachine.example.com su - - - 'su root' failed for lonvick on /dev/pts/8",
+        "syslog_hostname": "mymachine.example.com",
+        "syslog_appname": "su",
+        "syslog_timestamp": "2003-10-11T22:14:15.003Z",
+        "syslog_facility": 4,
+        "syslog_msg": "'su root' failed for lonvick on /dev/pts/8",
+        "syslog_priority": 34,
+        "source_type": "linux-syslog",
+        "syslog_version": 1,
+        "syslog_severity": 2,
+        "timestamp": 1667819310036
+      }
+    ],
+    "testing_table_name": "linux_host",
+    "testing_table_mapping": {
+      "mymachine.example.com": {
+        "syslog_hostname": "test-name"
+      }
+    }
+  },
+  "assertions": [
+    {
+      "assertion_type": "path_and_value_matches",
+      "json_path": "enriched_hostname",
+      "expected_pattern": "test-name",
+      "negated_pattern": false,
+      "active": true
+    }
+  ],
+  "author": "siembol",
+  "version": 1,
+  "config_name": "linux_hostname"
+}
