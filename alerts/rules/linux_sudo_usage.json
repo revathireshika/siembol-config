@@ -10,9 +10,9 @@
       "description": "sudo",
       "matcher_type": "IS_IN_SET",
       "is_negated": false,
-      "field": "syslog_appname",
+      "field": "syslog_hostname",
       "case_insensitive": false,
-      "data": "su"
+      "data": "mymachine.example.com"
     }
   ]
 }
