@@ -7,7 +7,7 @@
     "parser_type": "syslog",
     "syslog_config": {
       "syslog_version": "RFC_5424",
-      "merge_sd_elements": true,
+      "merge_sd_elements": false,
       "timezone": "UTC"
     }
   }
