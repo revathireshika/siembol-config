@@ -1,6 +1,6 @@
 {
   "parsing_app_name": "linux-syslog",
-  "parsing_app_version": 2,
+  "parsing_app_version": 3,
   "parsing_app_author": "siembol",
   "parsing_app_description": "linux syslog parsing application",
   "parsing_app_settings": {
@@ -15,7 +15,8 @@
     "output_parallelism": 1,
     "parse_metadata": false,
     "max_num_fields": 300,
-    "max_field_size": 40000
+    "max_field_size": 40000,
+    "original_string_topic": "linux-syslog"
   },
   "parsing_settings": {
     "single_parser": {
