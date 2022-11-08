@@ -1,7 +1,7 @@
 {
   "rule_name": "heartbeat_dns_metadata",
   "rule_author": "siembol",
-  "rule_version": 2,
+  "rule_version": 3,
   "source_type": "siembol_heartbeat",
   "matchers": [
     {
