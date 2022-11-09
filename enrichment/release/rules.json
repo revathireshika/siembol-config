@@ -1,5 +1,5 @@
 {
-  "rules_version": 6,
+  "rules_version": 7,
   "rules": [
     {
       "rule_name": "ip_hostname",
@@ -28,7 +28,7 @@
     {
       "rule_name": "heartbeat_dns_metadata",
       "rule_author": "siembol",
-      "rule_version": 1,
+      "rule_version": 3,
       "source_type": "siembol_heartbeat",
       "matchers": [
         {
@@ -36,7 +36,7 @@
           "matcher_type": "REGEX_MATCH",
           "is_negated": false,
           "field": "siembol_heartbeat",
-          "data": "true"
+          "data": "false"
         }
       ],
       "table_mapping": {
@@ -57,20 +57,20 @@
     {
       "rule_name": "linux_hostname",
       "rule_author": "siembol",
-      "rule_version": 2,
+      "rule_version": 3,
       "source_type": "linux-syslog",
       "matchers": [
         {
           "is_enabled": true,
           "matcher_type": "REGEX_MATCH",
           "is_negated": false,
-          "field": "syslog_hostname",
-          "data": "mymachine.example.com"
+          "field": "syslog_appname",
+          "data": "su"
         }
       ],
       "table_mapping": {
         "table_name": "linux_host",
-        "joining_key": "hostname",
+        "joining_key": "${syslog_appname}",
         "enriching_fields": [
           {
             "table_field_name": "syslog_hostname",
